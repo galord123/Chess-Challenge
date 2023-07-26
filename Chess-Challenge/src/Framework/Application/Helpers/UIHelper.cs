@@ -36,7 +36,7 @@ namespace ChessChallenge.Application
                 {
                     const int baseSize = 64;
                     uint fileSize = 0;
-                    var fileData = Raylib.LoadFileData(GetResourcePath("Fonts", fontName), ref fileSize);
+                    var fileData = Raylib.LoadFileData("C:\\files\\Fonts\\OPENSANS-SEMIBOLD.TTF", ref fileSize);
                     Font fontSdf = default;
                     fontSdf.baseSize = baseSize;
                     fontSdf.glyphCount = 95;
@@ -51,9 +51,9 @@ namespace ChessChallenge.Application
                     UIHelper.fontSdf = fontSdf;
 
                 }
-                shader = Raylib.LoadShader("", GetResourcePath("Fonts", "sdf.fs"));
+                shader = Raylib.LoadShader("", "C:\\Users\\משתמש\\Documents\\Chess-Challenge\\Chess-Challenge\\resources\\Fonts\\sdf.fs");
             }
-            font = Raylib.LoadFontEx(GetResourcePath("Fonts", fontName), 128, null, 0);
+            font = Raylib.LoadFontEx("C:\\Users\\משתמש\\Documents\\Chess-Challenge\\Chess-Challenge\\resources\\Fonts\\OPENSANS-SEMIBOLD.TTF", 128, null, 0);
 
         }
 

@@ -53,7 +53,7 @@ namespace ChessChallenge.Application
         public BoardUI()
         {
             theme = new BoardTheme();
-            piecesTexture = Raylib.LoadTexture(UIHelper.GetResourcePath("Pieces.png"));
+            piecesTexture = Raylib.LoadTexture("C:\\files\\Pieces.png");
             Raylib.GenTextureMipmaps(ref piecesTexture);
             Raylib.SetTextureWrap(piecesTexture, TextureWrap.TEXTURE_WRAP_CLAMP);
             Raylib.SetTextureFilter(piecesTexture, TextureFilter.TEXTURE_FILTER_BILINEAR);
